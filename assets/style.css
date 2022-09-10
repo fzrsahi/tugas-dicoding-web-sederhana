@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@200&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  scroll-behavior: smooth;
+}
+nav {
+  height: 50px;
+  background-color: rgba(0, 5, 47,0.4);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-left a{
+  padding:20px 20px 0px 20px;
+  color: white;
+  float:left ;
+  background: 
+      linear-gradient(currentColor 0 0) 
+      bottom /var(--d, 0) 3px 
+      no-repeat;
+  transition:0.5s;
+}
+
+.header-left a:hover{
+  --d: 100%;
+}
+
+.header-list {
+  float: right;
+  margin-top: 20px;
+  margin-right: 40px;
+  
+}
+
+.header-list li{
+  display: inline;
+  margin-right: 20px;
+}
+.header-list a{
+  color: white;
+  background: 
+      linear-gradient(currentColor 0 0) 
+      bottom /var(--d, 0) 3px 
+      no-repeat;
+  transition:0.5s;
+}
+
+.header-list a:hover{
+  --d: 100%;
+}
+
+
+.top-wrapper {
+  background-image: url(img/bimasakti.webp);
+  background-size: cover;
+  height: 775px;
+  
+}
+
+.top-wrapper h1{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 190px;
+  font-size: 100px;
+  
+}
+.top-wrapper p{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 190px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+section h1 {
+  position: relative;
+  text-align: center;
+  top: 50px;
+  font-size: 30px;
+  color: white;
+}
+section p {
+  position: relative;
+  text-align: center;
+  top: 80px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.earth {
+  background-image: url(/assets/img/wallpaperbetter\ \(1\).jpg);
+  
+}
+.planet {
+  width: 400px;
+  height: auto;
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  margin-top: 1px;
+  height: 750px;
+  text-align: center;
+}
+
+.mars {
+  background-image: url(/assets/img/wallpaperbetter\ \(1\).jpg);
+}
+
+.pluto {
+  background-image: url(/assets/img/wallpaperbetter\ \(1\).jpg);
+}
+
+
+.profile img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.profile {
+  background-image: url(/assets/img/32253842574_d3d449ab86_c.jpg);
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.profile h1 {
+  margin-bottom: 40px;
+}
+.profile h2 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.profile p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+} 
+
+
+@media (max-width:670px){
+  .container p {
+    font-size: 15px;
+  }
+
+  .earth2-img,.mars2-img,.pluto2-img {
+    display: none;
+  }
+}
+
+@media (max-width:400px){
+  .header-list{
+    display: none;
+  }
+
+  .top-wrapper h1 {
+    font-size: 50px;
+  }
+
+  .pluto-img {
+    width: 50px;
+    margin-left: 55px
+  }
+
+  img {
+    margin-right: 0px;
+  }
+
+  .container p {
+    font-size: 10px;
+  }
+
+  .earth img,.mars img{
+    width: 300px;
+  }
+  .earth p,.mars p{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width:415px){
+  .top-wrapper h1 {
+    font-size: 50px;
+  }
+  .pluto-img {
+    width: 50px;
+    margin-left: 55px
+  }
+  .earth img,.mars img{
+    width: 300px;
+  }
+
+  .header-list {
+    display: inline;
+    font-size: 10px;
+  }
+  .header-left{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:999px){ 
+  .earth2-img,.mars2-img,.pluto2-img {
+    display: none;
+  }
+
+  .planet {
+    width: 230px;
+  }
+}
